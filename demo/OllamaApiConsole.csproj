@@ -3,8 +3,17 @@
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net9.0</TargetFramework>
-		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageVersion Include="Microsoft.Extensions.AI" Version="9.7.1" />
+		<PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
+		<PackageVersion Include="SixLabors.ImageSharp" Version="3.1.10" />
+		<PackageVersion Include="Spectre.Console" Version="0.50.0" />
+		<PackageVersion Include="Spectre.Console.ImageSharp" Version="0.50.0" />
+		<PackageVersion Include="OllamaSharp" Version="5.3.3" />
+		<PackageVersion Include="OllamaSharp.ModelContextProtocol" Version="5.3.3" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.AI" />
@@ -12,12 +21,8 @@
 		<PackageReference Include="SixLabors.ImageSharp" />
 		<PackageReference Include="Spectre.Console" />
 		<PackageReference Include="Spectre.Console.ImageSharp" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\src\OllamaSharp.ModelContextProtocol\OllamaSharp.ModelContextProtocol.csproj" />
-		<ProjectReference Include="..\src\OllamaSharp\OllamaSharp.csproj" />
-		<ProjectReference Include="..\src\SourceGenerators\OllamaSharp.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+		<PackageReference Include="OllamaSharp" />
+		<PackageReference Include="OllamaSharp.ModelContextProtocol" />
 	</ItemGroup>
 
 	<ItemGroup>
